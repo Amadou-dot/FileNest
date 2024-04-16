@@ -1,8 +1,10 @@
 import './SideBar.css';
 import Item from '../Item/Item';
+import handleClick from '../../handlers/SidebarHandler';
+
 export default function SideBar() {
   return (
-    <div className='sidebar'>
+    <div className='sidebar' onClick={handleClick}>
       <h2>My docs</h2>
       <Item name='Dashboard' icon='ri-apps-line' active/>
       <Item name='Your Files' icon='ri-folder-line' />

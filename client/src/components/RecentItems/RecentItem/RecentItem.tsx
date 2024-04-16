@@ -1,6 +1,6 @@
-export default function RecentItem({icon, name, size, selected}: {icon: string, name: string, extension: string, size: string, selected: boolean}) {
+export default function RecentItem({icon, name, size, active}: {icon: string, name: string, extension: string, size: string, active?: boolean}) {
   return (
-    <tr className={`${selected ? 'selected':''}`}>
+    <tr className={`recent-item${active ? 'active':''}`}>
       <td className='icon'><i className={icon}></i></td>
       <td className='name'>{name}</td>
       <td className='extension'>{name.split('.')[1].toUpperCase()} File</td>

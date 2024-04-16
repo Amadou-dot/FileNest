@@ -13,7 +13,7 @@ table tbody tr {
   transition: all 0.3s ease;
 }
 
-table tbody tr.selected,
+table tbody tr.active,
 table tbody tr:hover {
   border-radius: 14px;
   background-color: #e8eaf6;
@@ -32,7 +32,7 @@ table tbody tr td.icon i {
   transition: all 0.3s ease;
 }
 
-table tbody tr.selected td.icon i,
+table tbody tr.active td.icon i,
 table tbody tr:hover td.icon i {
   border-color: #7e8299;
 }
