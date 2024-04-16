@@ -1,0 +1,20 @@
+.sign-out {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #364670;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.sign-out:hover {
+  color: #1976d2;
+}
+
+.sign-out h3 {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.sign-out i {
+    font-size: 22px;
+  }
