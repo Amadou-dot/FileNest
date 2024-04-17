@@ -41,3 +41,29 @@
     padding: 15px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .right-section .profile{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  .right-section .widgets {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .right-section .widgets .disk {
+    width: 48%;
+  }
+
+  .right-section .widgets .bottom {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .right-section .widgets .bottom button {
+    margin: 0;
+  }
+}

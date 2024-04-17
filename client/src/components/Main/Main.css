@@ -43,3 +43,15 @@
     font-size: 13px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 26px 15px 0;
+  }
+  .main .header {
+    justify-content: start;
+  }
+  .main .header .search {
+    width: 30%;
+  }
+}
