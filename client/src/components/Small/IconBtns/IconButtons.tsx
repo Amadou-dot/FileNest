@@ -1,3 +1,4 @@
+import MenuBtnHandler from '../../../handlers/MenuBtnHandler';
 import './IconButtons.css';
 
 export default function IconButtons() {
@@ -5,7 +6,7 @@ export default function IconButtons() {
     <div className='icon-btns'>
       <i className='ri-notification-line'></i>
       <i className='ri-message-3-line'></i>
-      <i className='ri-menu-line' id='menu-btn'></i>
+      <i className='ri-menu-line' id='menu-btn' onClick={MenuBtnHandler}></i>
     </div>
   );
 }

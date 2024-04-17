@@ -28,10 +28,10 @@ function App() {
         <h3 className='separator'>Recent</h3>
         <RecentItems />
       </MainContent>
-        <RightSection>
-          <Profile />
-          <Widgets />
-        </RightSection>
+      <RightSection>
+        <Profile />
+        <Widgets />
+      </RightSection>
     </>
   );
 }
