@@ -67,3 +67,18 @@
     margin: 0;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .right-section .profile {
+    width: 90%;
+  }
+  
+  .right-section .widgets .disk .info h5 {
+    font-size: 14px;
+  }
+
+  .right-section .widgets .disk .info p {
+    font-size: 13px;
+  }
+
+}
