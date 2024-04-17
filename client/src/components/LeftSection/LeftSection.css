@@ -15,3 +15,21 @@
     margin-bottom: 15px;
     text-align: center;
 }
+
+@media screen and (max-width: 1230px) {
+    .left-section{
+        width: 90px;
+    }
+    .left-section h2{
+        font-size: 17px;
+    }
+    .left-section .sidebar .item {
+        justify-content: center;
+    }
+    .left-section .sidebar .item h3, .left-section .sign-out h3 {
+        display: none;
+    }
+    .left-section .sidebar .item i, .left-section .sign-out i {
+        font-size: 26px;
+    }
+}

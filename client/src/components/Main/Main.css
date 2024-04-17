@@ -8,3 +8,18 @@
   font-weight: 500;
   color: #364670;
 }
+
+@media screen and (max-width: 1230px) {
+  .main .quick-access .item {
+    width: 23%;
+  }
+  .main .quick-access .item i {
+    font-size: 36px;
+  }
+  .main .quick-access .item h5 {
+    font-size: 16px;
+  }
+  .main .quick-access .item p {
+    font-size: 12px;
+  }
+}
