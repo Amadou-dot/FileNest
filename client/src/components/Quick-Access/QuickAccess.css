@@ -3,7 +3,10 @@
   justify-content: space-around;
   cursor: pointer;
 }
-
+.quick-access a {
+  text-decoration: none;
+  color: inherit;
+}
 .quick-access .item {
   display: flex;
   flex-direction: column;

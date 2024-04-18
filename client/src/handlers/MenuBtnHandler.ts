@@ -1,15 +1,20 @@
-let leftSection: HTMLElement;
-let isMenuOpen = false;
+import { useState, useEffect } from 'react';
 
-window.onload = () => {
-  leftSection = document.querySelector('.left-section') as HTMLElement;
-  isMenuOpen = leftSection.style.left === '0px';
-};
+export default function MenuBtnHandler() {
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
 
-export default function MenuBtnHandler(): void {
-  if (!leftSection) return;
+  useEffect(() => {
+    const leftSection = document.querySelector('.left-section') as HTMLElement;
+    if (!leftSection) return;
 
-  if (isMenuOpen) leftSection.style.left = '-160px';
-  else leftSection.style.left = '0';
-  isMenuOpen = !isMenuOpen;
+    if (isMenuOpen) {
+      leftSection.style.left = '-160px';
+    } else {
+      leftSection.style.left = '0';
+    }
+  }, [isMenuOpen]);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  return toggleMenu;
 }

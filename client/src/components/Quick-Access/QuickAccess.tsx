@@ -4,7 +4,6 @@ import QuickAccessItem from './QuickAccessItem/QuickAccessItem';
 export default function QuickAccess() {
   return (
     <>
-      
       <div className='quick-access'>
         <QuickAccessItem
           icon='ri-image-fill'
@@ -12,6 +11,7 @@ export default function QuickAccess() {
           files={25}
           totalFiles={500}
         />
+
         <QuickAccessItem
           icon='ri-file-3-line'
           title='Documents'
@@ -33,4 +33,13 @@ export default function QuickAccess() {
       </div>
     </>
   );
+}
+
+{
+  /* <QuickAccessItem
+  icon='ri-image-fill'
+  title='Images'
+  files={25}
+  totalFiles={500}
+/>; */
 }

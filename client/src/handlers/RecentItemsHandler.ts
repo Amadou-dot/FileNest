@@ -11,5 +11,6 @@ interface ItemElement extends HTMLElement {
       items.forEach(i => i.classList.remove('active'));
       itemElement.classList.add('active');
     }
+    //TODO: Add logic to navigate to the selected item
   }
   

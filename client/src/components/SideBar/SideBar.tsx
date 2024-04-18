@@ -6,9 +6,9 @@ export default function SideBar() {
   return (
     <div className='sidebar' onClick={handleClick}>
       <h2>My docs</h2>
-      <Item name='Dashboard' icon='ri-apps-line' active/>
-      <Item name='Your Files' icon='ri-folder-line' />
-      <Item name='Your Disks' icon='ri-hard-drive-3-line' />
+      <Item name='Dashboard' icon='ri-apps-line' active />
+      <Item name='Files' icon='ri-folder-line' />
+      <Item name='Disks' icon='ri-hard-drive-3-line' />
       <Item name='Protected' icon='ri-folder-lock-line' />
       <Item name='Favorites' icon='ri-star-line' />
       <Item name='Trash' icon='ri-delete-bin-5-line' />

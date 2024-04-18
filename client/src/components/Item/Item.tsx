@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Item.css'
 export default function Item({
   name,
@@ -8,10 +9,11 @@ export default function Item({
   icon: string;
   active?: boolean;
 }) {
+  const path = name === 'Dashboard' ? '/' : `/${name.toLowerCase()}`;
   return (
-    <div className={`item ${active ? 'active' : ''}`}>
+    <Link className={`item ${active ? 'active' : ''}`} to={path}>
       <i className={icon}></i>
       <h3>{name}</h3>
-    </div>
+    </Link>
   );
 }
