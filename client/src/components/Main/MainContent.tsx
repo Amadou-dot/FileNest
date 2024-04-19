@@ -1,4 +1,4 @@
-import './Main.css';
+import './MainContent.css';
 
 export default function MainContent({
   children,

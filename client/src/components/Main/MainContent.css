@@ -8,7 +8,9 @@
   font-weight: 500;
   color: #364670;
 }
-
+.mobile-display {
+  display: none;
+}
 @media screen and (max-width: 1230px) {
   .main .quick-access .item {
     width: 23%;
@@ -31,7 +33,7 @@
   .main .header {
     gap: 10px;
   }
-  .main .header .icon-btns i#menu-btn {
+  .main .header .icon-btns i#menu-btn, .mobile-display {
     display: block;
   }
   .main .quick-access .item p {
