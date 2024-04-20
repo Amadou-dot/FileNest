@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 992px) {
+  .header {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    justify-content: start;
+  }
+}

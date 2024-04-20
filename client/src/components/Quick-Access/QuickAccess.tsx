@@ -1,10 +1,9 @@
-import './QuickAccess.css';
 import QuickAccessItem from './QuickAccessItem/QuickAccessItem';
-
+import styles from './QuickAccess.module.css';
 export default function QuickAccess() {
   return (
     <>
-      <div className='quick-access'>
+      <div className={styles['quick-access']}>
         <QuickAccessItem
           icon='ri-image-fill'
           title='Images'
@@ -33,13 +32,4 @@ export default function QuickAccess() {
       </div>
     </>
   );
-}
-
-{
-  /* <QuickAccessItem
-  icon='ri-image-fill'
-  title='Images'
-  files={25}
-  totalFiles={500}
-/>; */
 }

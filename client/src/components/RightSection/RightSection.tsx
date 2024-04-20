@@ -1,9 +1,10 @@
-import './RightSection.css';
+import styles from './RightSection.module.css';
 
 export default function RightSection({
-  children,
+  children, className
 }: {
   children: React.ReactNode;
+  className?: string;
 }) {
-  return <section className='right-section'>{children}</section>;
+  return <section className={className ? `${className}`: `${styles['right-section']}`}>{children}</section>;
 }

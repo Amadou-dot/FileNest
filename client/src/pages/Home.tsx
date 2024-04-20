@@ -5,6 +5,7 @@ import RecentItems from '../components/RecentItems/RecentItems';
 import RightSection from '../components/RightSection/RightSection';
 import SearchBar from '../components/Search/SearchBar';
 import IconButtons from '../components/Small/IconBtns/IconButtons';
+import Separator from '../components/Small/Separator/Separator';
 import Profile from '../components/UserProfile/Profile';
 import Widgets from '../components/Widgets/Widgets';
 
@@ -16,9 +17,9 @@ export default function Home() {
           <SearchBar />
           <IconButtons />
         </Header>
-        <h3 className='separator'>Quick Access</h3>
+        <Separator content='Quick Access' />
         <QuickAccess />
-        <h3 className='separator'>Recent</h3>
+        <Separator content='Recent Items' />
         <RecentItems />
       </MainContent>
       <RightSection>

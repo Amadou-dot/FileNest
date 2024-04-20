@@ -1,12 +1,11 @@
-import './SideBar.css';
+import styles from './SideBar.module.css';
 import Item from '../Item/Item';
-import handleClick from '../../handlers/SidebarHandler';
 
 export default function SideBar() {
   return (
-    <div className='sidebar' onClick={handleClick}>
+    <div className={styles.sidebar}>
       <h2>My docs</h2>
-      <Item name='Dashboard' icon='ri-apps-line' active />
+      <Item name='Dashboard' icon='ri-apps-line' />
       <Item name='Files' icon='ri-folder-line' />
       <Item name='Disks' icon='ri-hard-drive-3-line' />
       <Item name='Protected' icon='ri-folder-lock-line' />

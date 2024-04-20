@@ -1,0 +1,28 @@
+.btn--upload {
+  border: none;
+  background-color: #1976d2;
+  color: #fff;
+  margin: 30px 0;
+  font-size: 20px;
+  padding: 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn--upload:hover {
+  background-color: #0d47a1;
+}
+
+@media screen and (max-width: 1230px) {
+  .btn--upload {
+    font-size: 17px;
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .btn--upload {
+    margin: 0;
+  }
+}

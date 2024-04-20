@@ -1,0 +1,52 @@
+.fileThumbnail {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+  width: 15%;
+  height: 200px;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(136, 148, 171, 0.2),
+    0 24px 20px -2px rgba(71, 82, 107, 0.1);
+    cursor: pointer;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.fileThumbnail:hover, .fileThumbnail.active {
+  box-shadow: none;
+  border-color: #7e8299;
+}
+.fileThumbnail.active {
+    border: 3px solid #7e8299;
+    transition: none;
+}
+.fileIcon {
+  font-size: 50px;
+  display: flex;
+  height: 80%;
+  width: 100%;
+  border-radius: 10px;
+  background-image: url('../../assets/profile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.fileIcon img {
+  width: 100%;
+  /* height: 80%; */
+  object-fit: cover;
+  border-radius: 20px;
+
+}
+.fileName {
+  font-size: 15px;
+  color: #7e8299;
+}
+
+.fileThumbnail:last-child {
+  margin-bottom: 150px;
+}

@@ -1,0 +1,10 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+h2 {
+    color: #364670;
+    margin-bottom: 15px;
+    text-align: center;
+  }

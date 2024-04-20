@@ -1,8 +1,8 @@
-import './SearchBar.css';
+import styles from './SearchBar.module.css';
 
 export default function SearchBar() {
   return (
-    <div className='search'>
+    <div className={styles.search}>
       <button>
         <i className='ri-search-2-line'></i>
       </button>

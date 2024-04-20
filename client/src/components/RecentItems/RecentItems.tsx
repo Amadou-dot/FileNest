@@ -1,11 +1,11 @@
 import RecentItemsHandler from '../../handlers/RecentItemsHandler';
 import RecentItem from './RecentItem/RecentItem';
-import './RecentItems.css';
+import styles from './RecentItems.module.css';
 
 export default function RecentItems() {
   return (
-    <table>
-      <tbody onClick={RecentItemsHandler}>
+    <table className={styles.table}>
+      <tbody className={styles.tbody} onClick={RecentItemsHandler}>
             <RecentItem icon='ri-image-fill' name='IMG_498.png' extension='PNG' size='2.7' />
             <RecentItem icon='ri-file-3-line' name='My Report.docx' extension='Word Document' size='5.4'  />
             <RecentItem icon='ri-video-on-fill' name='birds.mp4' extension='MP4' size='2.7'  />
@@ -14,3 +14,5 @@ export default function RecentItems() {
     </table>
   );
 }
+
+// TODO: Fix the RecentItemsHandler

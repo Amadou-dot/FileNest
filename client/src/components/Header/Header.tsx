@@ -1,5 +1,5 @@
-import './Header.css';
+import styles from './Header.module.css';
 
 export default function Header({ children }: { children: React.ReactNode }) {
-  return <header className='header'>{children}</header>;
+  return <header className={styles.header}>{children}</header>;
 }

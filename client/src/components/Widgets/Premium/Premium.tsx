@@ -1,9 +1,9 @@
-import './Premium.css';
+import styles from './Premium.module.css';
 
 export default function Premium() {
   return (
-    <div className='premium'>
-      <div className='title'>
+    <div className={styles.premium}>
+      <div className={styles.title}>
         <i className='ri-folder-add-line'></i>
         <h5>Buy Premium</h5>
       </div>

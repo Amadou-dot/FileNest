@@ -1,0 +1,51 @@
+.right-section {
+  flex: 1;
+  padding: 25px 25px 15px 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.file-info-header {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  /* font-weight: bold; */
+  align-items: center;
+  justify-content: center;
+}
+
+.file-info-icon i {
+  font-size: 25px;
+}
+
+.file-info-name {
+  font-weight: bold;
+}
+
+.file-info-details {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 16px;
+  /* align-items: center; */
+}
+
+.file-info-detail {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.file-info-detail-label {
+}
+
+.file-info-detail-value {
+  /* font-weight: bold; */
+}

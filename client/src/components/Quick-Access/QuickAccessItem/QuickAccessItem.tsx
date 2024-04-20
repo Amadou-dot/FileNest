@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom';
-
+import styles from  '../QuickAccess.module.css';
 export default function QuickAccessItem({
   icon,
   title,
-
   files,
   totalFiles,
 }: {
@@ -13,7 +12,7 @@ export default function QuickAccessItem({
   totalFiles: number;
 }) {
   return (
-    <Link to={title.toLowerCase()} className='item'>
+    <Link to={title.toLowerCase()} className={styles.item}>
       <i className={icon}></i>
       <h5>{title}</h5>
       <p>

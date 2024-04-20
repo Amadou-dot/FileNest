@@ -1,0 +1,22 @@
+.main {
+  flex: 6;
+  padding: 25px;
+}
+
+@media screen and (max-width: 992px) {
+  .main {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 26px 15px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .main {
+    padding: 100px 15px 0;
+  }
+}
