@@ -1,7 +1,7 @@
 import FileList from "../components/FileList";
-import { files } from "../data/Files";
+import { useFiles } from "../context/useFiles";
 export default function Documents() {
-  const documentFilter = (file: { name: string }) => file.name.endsWith('.docx') || file.name.endsWith('.ppt') || file.name.endsWith('.xlsx') || file.name.endsWith('.pdf') || file.name.endsWith('.txt');
-  return <FileList files={files} filter={documentFilter} />;
+  const documentFiles = useFiles().documentFiles;
+  return <FileList files={documentFiles} />;
 
 }

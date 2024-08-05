@@ -7,10 +7,9 @@ import styles from '../pages/Files.module.css';
 
 interface FileListProps {
   files: { name: string; url: string }[];
-  filter?: (file: { name: string; url: string }) => boolean;
 }
 
-export default function FileList({ files, filter }: FileListProps) {
+export default function FileList({ files }: FileListProps) {
   const [activeFile, setActiveFile] = useState<string | null>(null);
 
   const handleFileClick = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -22,13 +21,12 @@ export default function FileList({ files, filter }: FileListProps) {
 	setActiveFile(prev => (prev === fileName ? null : fileName));
   };
 
-  const filteredFiles = filter ? files.filter(filter) : files;
 
   return (
 	<>
         <MainContent>
 		<div className={styles.files} onClick={handleFileClick}>
-            {filteredFiles.map((file, index) => (
+            {files.map((file, index) => (
 			<FileThumbnail
                 key={index}
                 fileName={file.name}

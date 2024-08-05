@@ -1,6 +1,6 @@
 import FileList from "../components/FileList";
-import { files } from "../data/Files";
+import { useFiles } from "../context/useFiles";
 export default function Sound() {
-  const soundFilter = (file: { name: string }) => file.name.endsWith('.mp3') || file.name.endsWith('.wav') || file.name.endsWith('.flac') || file.name.endsWith('.aac') || file.name.endsWith('.m4a');
-  return <FileList files={files} filter={soundFilter} />;
+  const soundFiles = useFiles().soundFiles;
+  return <FileList files={soundFiles} />;
 }

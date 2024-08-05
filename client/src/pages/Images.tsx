@@ -1,13 +1,7 @@
-import { files } from "../data/Files";
 import FileList from "../components/FileList";
+import { useFiles } from "../context/useFiles";
 
 export default function Images() {
-  const imageFilter = (file: { name: string }) =>
-    file.name.endsWith('.jpg') ||
-    file.name.endsWith('.png') ||
-    file.name.endsWith('.jpeg') ||
-    file.name.endsWith('.gif') ||
-    file.name.endsWith('.bmp');
-
-  return <FileList files={files} filter={imageFilter} />;
+  const imageFiles = useFiles().imageFiles;
+  return <FileList files={imageFiles} />;
 }
