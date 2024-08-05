@@ -12,6 +12,7 @@ I used vite for the frontend:
 4. When the command completes, Type "npm run dev" and press enter
 5. Go to http://localhost:5173
 
+
 ## To be Implemented
 - User Privacy and Security: Secure authentication and encryption
 - Access Control: Define user permissions
