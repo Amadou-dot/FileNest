@@ -7,7 +7,6 @@ import Files from './pages/Files';
 import Home from './pages/Home';
 import Images from './pages/Images';
 import Login from './pages/Login';
-import PageNotFound from './pages/PageNotFound';
 import Protected from './pages/Protected';
 import Settings from './pages/Settings';
 import SignUp from './pages/SignUp';
@@ -24,7 +23,7 @@ export default function Router() {
     <>
       {showLeftSection && <LeftSection />}
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='/' index element={<Home />} />
         <Route path='/home' element={<Home />} />
         <Route path='/login' element={<Login />} />
         <Route path='/sign-up' element={<SignUp />} />
@@ -38,7 +37,7 @@ export default function Router() {
         <Route path='/favorites' element={<Favorites />} />
         <Route path='/trash' element={<Trash />} />
         <Route path='/settings' element={<Settings />} />
-        <Route path='*' element={<PageNotFound />} />
+        <Route path='*' element={<Home />} />
       </Routes>
     </>
   );

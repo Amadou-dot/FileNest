@@ -1,5 +1,5 @@
-import FileList from "../components/FileList";
-import { useFiles } from "../context/useFiles";
+import FileList from '../components/FileList';
+import { useFiles } from '../context/useFiles';
 
 export default function Images() {
   const imageFiles = useFiles().imageFiles;
